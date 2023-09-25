@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +20,6 @@
     <!-- Header -->
     <header class="navigation-top">
       <div class="container navigation-container">
-        <!-- navigate panel -->
         <nav class="navigation">
           <a class="logo" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
@@ -51,6 +50,16 @@
             </li>
           </ul>
         </address>
+        <button class="open-navigation-menu-btn">
+          <svg
+            class="open-navigation-menu-icon"
+            width="24"
+            height="24"
+            aria-label="navigation menu icon"
+          >
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -67,8 +76,7 @@
       </section>
 
       <!-- Section 1 -->
-
-      <section class="section-our-medots">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Секція 1</h2>
           <ul class="our-metods-list">
@@ -127,12 +135,16 @@
         </div>
       </section>
       <!-- OUR TEAM -->
-      <section class="our-team-section">
-        <div class="container">
+      <section class="our-team-section section">
+        <div class="container our-team-container">
           <h2 class="our-team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-link">
-              <img src="./images/team-card-1.jpg" alt="Photo Mark Guerrero" />
+              <img
+                srcset="./images/our-team/team-card-1@2x.jpg 2x"
+                src="./images/our-team/team-card-1.jpg"
+                alt="Photo Mark Guerrero"
+              />
               <div class="our-team-block-name">
                 <h3 class="our-team-list-name">Mark Guerrero</h3>
                 <p class="our-team-list-profession">Product Designer</p>
@@ -185,7 +197,11 @@
               </div>
             </li>
             <li class="team-list-link">
-              <img src="./images/team-card-2.jpg" alt="Photo Tom Ford" />
+              <img
+                srcset="./images/our-team/team-card-2@2x.jpg 2x"
+                src="./images/our-team/team-card-2.jpg"
+                alt="Photo Tom Ford"
+              />
               <div class="our-team-block-name">
                 <h3 class="our-team-list-name">Tom Ford</h3>
                 <p class="our-team-list-profession">Frontend Developer</p>
@@ -238,7 +254,11 @@
               </div>
             </li>
             <li class="team-list-link">
-              <img src="./images/team-card-3.jpg" alt="Photo Camila Garcia" />
+              <img
+                srcset="./images/our-team/team-card-3@2x.jpg 2x"
+                src="./images/our-team/team-card-3.jpg"
+                alt="Photo Camila Garcia"
+              />
               <div class="our-team-block-name">
                 <h3 class="our-team-list-name">Camila Garcia</h3>
                 <p class="our-team-list-profession">Marketing</p>
@@ -291,7 +311,11 @@
               </div>
             </li>
             <li class="team-list-link">
-              <img src="./images/team-card-4.jpg" alt="Photo Daniel Wilson" />
+              <img
+                srcset="./images/our-team/team-card-4@2x.jpg 2x"
+                src="./images/our-team/team-card-4.jpg"
+                alt="Photo Daniel Wilson"
+              />
               <div class="our-team-block-name">
                 <h3 class="our-team-list-name">Daniel Wilson</h3>
                 <p class="our-team-list-profession">UI Designer</p>
@@ -348,18 +372,24 @@
       </section>
       <!-- OUR PORTFOLIO -->
       <!-- SECTION 3 -->
-      <section class="section-our-porfolio">
-        <div class="container">
+      <section class="section section-our-porfolio">
+        <div class="container our-porfolio-container">
           <h2 class="our-portfolio-title">Our Portfolio</h2>
 
           <ul class="our-portfolio-list">
             <li class="our-portfolio-list-point">
               <div class="our-portfolio-image-wrapper">
                 <img
-                  src="./images/our-portfolio-1.jpg"
+                srcset="./images/our-portfolio/our-portfolio-1.jpg 360w,
+                ./images/our-portfolio/our-portfolio-1@2x.jpg 720w,
+                ./images/our-portfolio/our-portfolio-mobile-1.jpg 288w,
+                ./images/our-portfolio/our-portfolio-mobile-1@2x.jpg 576w,
+                ./images/our-portfolio/our-portfolio-tablet-1.jpg 356w,
+                ./images/our-portfolio/our-portfolio-tablet-1@2x.jpg 712w
+                "
+                sizes="(min-width: 1156px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                src="./images/our-portfolio/our-portfolio-mobile-1.jpg"
                   alt="Photo Banking App"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -375,6 +405,14 @@
             <li class="our-portfolio-list-point">
               <div class="our-portfolio-image-wrapper">
                 <img
+                srcset="./images/our-portfolio/our-portfolio-2.jpg 360w,
+                ./images/our-portfolio/our-portfolio-2@2x.jpg 720w,
+                ./images/our-portfolio/our-portfolio-mobile-2.jpg 288w,
+                ./images/our-portfolio/our-portfolio-mobile-2@2x.jpg 576w,
+                ./images/our-portfolio/our-portfolio-tablet-2.jpg 356w,
+                ./images/our-portfolio/our-portfolio-tablet-2@2x.jpg 712w
+                "
+                sizes="(min-width: 1156px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/our-portfolio-2.jpg"
                   alt="Photo Cashless Payment"
                   width="360"
@@ -394,6 +432,14 @@
             <li class="our-portfolio-list-point">
               <div class="our-portfolio-image-wrapper">
                 <img
+                srcset="./images/our-portfolio/our-portfolio-3.jpg 360w,
+                ./images/our-portfolio/our-portfolio-3@2x.jpg 720w,
+                ./images/our-portfolio/our-portfolio-mobile-3.jpg 288w,
+                ./images/our-portfolio/our-portfolio-mobile-3@2x.jpg 576w,
+                ./images/our-portfolio/our-portfolio-tablet-3.jpg 356w,
+                ./images/our-portfolio/our-portfolio-tablet-3@2x.jpg 712w
+                "
+                sizes="(min-width: 1156px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/our-portfolio-3.jpg"
                   alt="Photo Meditation App"
                   width="360"
@@ -413,6 +459,14 @@
             <li class="our-portfolio-list-point">
               <div class="our-portfolio-image-wrapper">
                 <img
+                srcset="./images/our-portfolio/our-portfolio-4.jpg 360w,
+                ./images/our-portfolio/our-portfolio-4@2x.jpg 720w,
+                ./images/our-portfolio/our-portfolio-mobile-4.jpg 288w,
+                ./images/our-portfolio/our-portfolio-mobile-4@2x.jpg 576w,
+                ./images/our-portfolio/our-portfolio-tablet-4.jpg 356w,
+                ./images/our-portfolio/our-portfolio-tablet-4@2x.jpg 712w
+                "
+                sizes="(min-width: 1156px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/our-portfolio-4.jpg"
                   alt="Photo Taxi Service"
                   width="360"
@@ -432,6 +486,14 @@
             <li class="our-portfolio-list-point">
               <div class="our-portfolio-image-wrapper">
                 <img
+                srcset="./images/our-portfolio/our-portfolio-5.jpg 360w,
+                ./images/our-portfolio/our-portfolio-5@2x.jpg 720w,
+                ./images/our-portfolio/our-portfolio-mobile-5.jpg 288w,
+                ./images/our-portfolio/our-portfolio-mobile-5@2x.jpg 576w,
+                ./images/our-portfolio/our-portfolio-tablet-5.jpg 356w,
+                ./images/our-portfolio/our-portfolio-tablet-5@2x.jpg 712w
+                "
+                sizes="(min-width: 1156px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/our-portfolio-5.jpg"
                   alt="Photo Screen Illustrations"
                   width="360"
@@ -451,6 +513,14 @@
             <li class="our-portfolio-list-point">
               <div class="our-portfolio-image-wrapper">
                 <img
+                srcset="./images/our-portfolio/our-portfolio-6.jpg 360w,
+                ./images/our-portfolio/our-portfolio-6@2x.jpg 720w,
+                ./images/our-portfolio/our-portfolio-mobile-6.jpg 288w,
+                ./images/our-portfolio/our-portfolio-mobile-6@2x.jpg 576w,
+                ./images/our-portfolio/our-portfolio-tablet-6.jpg 356w,
+                ./images/our-portfolio/our-portfolio-tablet-6@2x.jpg 712w
+                "
+                sizes="(min-width: 1156px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/our-portfolio-6.jpg"
                   alt="Photo Online Courses"
                   width="360"
@@ -473,7 +543,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="block-logo">
+    <footer class="block-footer">
       <div class="container container-footer">
         <div class="container-footer-logo">
           <a class="logo footer-logo" href="./index.html"
@@ -654,10 +724,74 @@
               I accept the terms and conditions of the
               <a class="review-form-privacy-link" href="">Privacy Policy</a>
             </label>
+            
           </div>
           <button class="review-form-submit" type="submit">Send</button>
         </form>
       </div>
+    </div>
+
+    <div class="mobile-menu">
+      <button class="mobile-menu-close-btn" type="button">
+        <svg class="mobile-menu-close-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+      <nav class="menu-navigation burger-menu-navigation">
+        <ul class="navigation-list burger-navigation-list">
+          <li>
+            <a class="link-navigation first-link-navigation" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li><a class="link-navigation" href="">Portfolio</a></li>
+          <li><a class="link-navigation" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="burger-our-address">
+        <ul class="address-list">
+          <li>
+            <a class="contacts contact-phone" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a class="contacts" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="social-media-list burger-social-media-list">
+        <li class="social-media-list-point">
+          <a href="aaa" class="social-media-list-link">
+            <svg class="social-media-list-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-list-point">
+          <a href="sss" class="social-media-list-link">
+            <svg class="social-media-list-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-list-point">
+          <a href="ddd" class="social-media-list-link">
+            <svg class="social-media-list-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-list-point">
+          <a href="fff" class="social-media-list-link">
+            <svg class="social-media-list-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
